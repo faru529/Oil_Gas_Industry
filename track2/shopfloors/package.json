@@ -1,0 +1,17 @@
+{
+  "name": "mes-erp-shopfloors",
+  "version": "1.0.0",
+  "description": "Shopfloor simulators for MES-ERP system",
+  "scripts": {
+    "sf1": "node shopfloor1.js",
+    "sf2": "node shopfloor2.js",
+    "sf3": "node shopfloor3.js",
+    "all": "concurrently \"npm run sf1\" \"npm run sf2\" \"npm run sf3\""
+  },
+  "dependencies": {
+    "mqtt": "^5.3.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -24,10 +24,10 @@ export const streamTitles = {
 };
 
 export const streamDescriptions = {
-  upstream: 'Exploration and production assets, including rigs and wellheads.',
-  midstream: 'Transportation and processing, pipelines and compressors.',
-  downstream: 'Refining and retail distribution operations.',
-  power: 'Generation and transmission assets like turbines and transformers.',
+  upstream: 'Exploration and production assets including drilling rigs and wellheads. Monitor drilling operations, well pressure, and production metrics in real-time.',
+  midstream: 'Transportation and processing infrastructure including pipelines and compressors. Track flow rates, pressure levels, and transportation efficiency.',
+  downstream: 'Refining and retail distribution operations. Monitor refinery processes, fuel inventory levels, and retail sales performance.',
+  power: 'Generation and transmission assets including gas turbines and transformers. Track power generation, voltage levels, and electrical system health.',
 };
 
 

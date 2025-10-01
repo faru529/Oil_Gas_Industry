@@ -3,9 +3,11 @@ import { AppBar, Toolbar, Typography, Button, Menu, MenuItem, IconButton } from 
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link, useNavigate } from 'react-router-dom';
 import { streamMap, twinNames } from './twinMeta';
+import { useAuth } from './AuthContext';
 
 function Navbar() {
   const navigate = useNavigate();
+  const { logout } = useAuth();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
 
@@ -20,6 +22,8 @@ function Navbar() {
         </Typography>
         <Button color="inherit" component={Link} to="/dashboard">Dashboard</Button>
         <Button color="inherit" component={Link} to="/alerts">Alerts</Button>
+        <Button color="inherit" component={Link} to="/analytics">Analytics</Button>
+        <Button color="inherit" component={Link} to="/pm">Predictive Maintenance</Button>
         <IconButton color="inherit" onClick={handleOpen} sx={{ ml: 1 }}>
           <MenuIcon />
         </IconButton>
@@ -35,6 +39,7 @@ function Navbar() {
             </div>
           ))}
         </Menu>
+        <Button color="inherit" onClick={logout} sx={{ ml: 1 }}>Logout</Button>
       </Toolbar>
     </AppBar>
   );

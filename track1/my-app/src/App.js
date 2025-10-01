@@ -11,6 +11,8 @@ import { AuthProvider } from './components/AuthContext';
 import OAuthCallback from './components/OAuthCallback';
 import Dashboard from './components/Dashboard';
 import Alerts from './components/Alerts';
+import Analytics from './components/Analytics';
+import PredictiveMaintenance from './components/PM';
 
 const AppContent = () => {
   const location = useLocation();
@@ -26,7 +28,9 @@ const AppContent = () => {
         <Route path="/oauth/callback" element={<OAuthCallback />} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/alerts" element={<ProtectedRoute><Alerts /></ProtectedRoute>} />
+        <Route path="/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
         <Route path="/twin/:twinId" element={<ProtectedRoute><TwinPage /></ProtectedRoute>} />
+        <Route path="/pm" element={<ProtectedRoute><PredictiveMaintenance /></ProtectedRoute>} />
       </Routes>
     </>
   );

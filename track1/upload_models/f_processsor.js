@@ -4,7 +4,7 @@ const { DigitalTwinsClient } = require("@azure/digital-twins-core");
 const { MongoClient } = require("mongodb");
 
 // --- CONFIGURATION ---
-const eventHubConnectionString = "Endpoint=sb://iothub-ns-iothub1far-67004921-0cbdc6f2ef.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=5UeuEevHXsKfryNjq9a26bTvLS0cjf0ANAIoTCiStWs=;EntityPath=iothub1far";
+const eventHubConnectionString = "Endpoint=sb://iothub-ns-iothub1far-67489241-21cdcd2f0d.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=I/h6LZfAv+INSPtq74LhDHLVMH954AXtBAIoTK3037w=;EntityPath=iothub1far";
 const eventHubName = "iothub1far";
 const consumerGroup = "$Default";
 
