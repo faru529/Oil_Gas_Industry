@@ -2,7 +2,7 @@ const { Client, Message } = require("azure-iot-device");
 const { Amqp } = require("azure-iot-device-amqp");
 
 // Replace with your IoT Hub device connection string
-const connString = "HostName=iothub1far.azure-devices.net;DeviceId=device1;SharedAccessKey=OuLxt8kr8sUcgEW91lD4tMYiMIlGsnfJhyHgIjSPHBQ=";
+const connString = "HostName={iothub_name}.azure-devices.net;DeviceId={device id};SharedAccessKey........=";
 
 const client = Client.fromConnectionString(connString, Amqp);
 
