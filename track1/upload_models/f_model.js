@@ -1,7 +1,7 @@
 const { DefaultAzureCredential } = require("@azure/identity");
 const { DigitalTwinsClient } = require("@azure/digital-twins-core");
 
-const adtUrl = "https://dig-twin.api.wcus.digitaltwins.azure.net";
+const adtUrl = "add your adturl here";
 
 async function main() {
     const client = new DigitalTwinsClient(adtUrl, new DefaultAzureCredential());
