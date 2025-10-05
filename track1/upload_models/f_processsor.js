@@ -4,13 +4,13 @@ const { DigitalTwinsClient } = require("@azure/digital-twins-core");
 const { MongoClient } = require("mongodb");
 
 // --- CONFIGURATION ---
-const eventHubConnectionString = "Endpoint=sb://iothub-ns-iothub1far-67489241-21cdcd2f0d.servicebus.windows.net/;SharedAccessKeyName=iothubowner;SharedAccessKey=I/h6LZfAv+INSPtq74LhDHLVMH954AXtBAIoTK3037w=;EntityPath=iothub1far";
-const eventHubName = "iothub1far";
+const eventHubConnectionString = "Endpoint=.....;SharedAccessKeyName=iothubowner;SharedAccessKey......;EntityPath={iothub_name}";
+const eventHubName = "your_iothub_name";
 const consumerGroup = "$Default";
 
-const adtUrl = "https://dig-twin.api.wcus.digitaltwins.azure.net";
+const adtUrl = "add your adt url here";
 const mongoUrl = "mongodb://localhost:27017";
-const dbName = "digitalTwinsTelemetryDB";
+const dbName = "your database name";
 
 // --- INITIALIZE CLIENTS ---
 const credential = new DefaultAzureCredential();
